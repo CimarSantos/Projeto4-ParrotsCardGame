@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    text-align: center;
+    background-color: #EEF9BF;
+}
+
+h1 {
+    padding: 5%;
+    color: #75B79E;
+    font-size: 56px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.espaco-baralho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.carta {
+    background-color: #A7E9AF;
+    background-image: url(/img/front.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    width: 117px;
+    height: 146px;
+    margin: 1.5%;
+}
+
+.escondido {
+    display: none;
+}
+
+@media only screen and (max-width: 425px) {
+    h1 {
+        font-size: 36px;
+        padding: 5% 10%;
+        line-height: 45px;
+    }
+    .espaco-baralho {
+        flex-direction: column;
+    }
+    .carta {
+        margin-bottom: 10%;
+    }
+}

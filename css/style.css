@@ -20,7 +20,14 @@ h1 {
     padding: 0 10%;
 }
 
-.carta {
+.carta,
+.comp1,
+.comp2,
+.comp3,
+.comp4,
+.comp5,
+.comp6,
+.comp7 {
     background-color: #A7E9AF;
     background-image: url(/img/front.png);
     background-size: 100px;
@@ -31,6 +38,34 @@ h1 {
     width: 117px;
     height: 146px;
     margin: 1.5%;
+}
+
+.comp1 {
+    background-image: url(/img/bobrossparrot.gif);
+}
+
+.comp2 {
+    background-image: url(/img/explodyparrot.gif);
+}
+
+.comp3 {
+    background-image: url(/img/fiestaparrot.gif);
+}
+
+.comp4 {
+    background-image: url(/img/metalparrot.gif);
+}
+
+.comp5 {
+    background-image: url(/img/revertitparrot.gif);
+}
+
+.comp6 {
+    background-image: url(/img/tripletsparrot.gif);
+}
+
+.comp7 {
+    background-image: url(/img/unicornparrot.gif);
 }
 
 .escondido {

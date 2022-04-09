@@ -18,6 +18,8 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 0 10%;
+    position: relative;
+    margin-top: 10%;
 }
 
 .carta {

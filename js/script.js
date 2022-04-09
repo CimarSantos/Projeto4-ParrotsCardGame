@@ -16,11 +16,17 @@ for (let i = 0; i < (qtdCarta / 2); i++) {
     }
 }
 
+let numJogadas = 0;
+
 function viraCarta(carta) {
     carta.classList.toggle("virada");
     carta.classList.toggle("frontFace");
     carta.classList.toggle("backFace");
+    numJogadas++;
+    console.log(numJogadas);
+
 }
+
 
 function numAleatorio(min, max) {
     min = Math.ceil(1);

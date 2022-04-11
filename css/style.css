@@ -19,7 +19,7 @@ h1 {
     align-items: center;
     padding: 0 10%;
     position: relative;
-    margin-top: 10%;
+    margin-top: 1%;
 }
 
 .carta {
@@ -33,8 +33,9 @@ h1 {
     width: 117px;
     height: 146px;
     margin: 1.5%;
-    transition: all .5s;
+    transition: all .25s;
     transform-style: preserve-3d;
+    perspective: 800px;
 }
 
 .carta:hover {
@@ -48,10 +49,6 @@ h1 {
 .backFace {
     background-image: url(/img/bobrossparrot.gif);
     transform: rotateY(-180deg);
-}
-
-.backFace.virada {
-    transform: rotateY(0deg);
 }
 
 .escondido {

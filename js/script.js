@@ -1,10 +1,26 @@
 const cardFaces = `<div class='carta frontFace' onclick='viraCarta(this)'> </div>`;
 const distro = document.querySelector(".espaco-baralho");
 
+const backImages = [];
+let backs = document.querySelectorAll(".virada");
+
 let qtdCarta = prompt("De 4 à 14, com quantas cartas quer jogar?");
 
 while (qtdCarta % 2 !== 0 || qtdCarta < 4 || qtdCarta > 14) {
     qtdCarta = prompt("Só são aceitos números pares, digite um número de 4 à 14");
+}
+
+for (let i = 0; i < qtdCarta; i++) {
+    let imgs = {
+        src: "img/" + i + ".gif",
+        id: i % (qtdCarta / 2)
+    };
+    backImages.push(imgs);
+
+    /* document.querySelectorAll(".backFace").style.backgroundImage = "url('" + backImages[i].src + "')";
+
+    console.log(backs);
+    "url('" + backImages[i].src + "')"  */
 }
 
 for (let i = 0; i < (qtdCarta / 2); i++) {
@@ -12,7 +28,6 @@ for (let i = 0; i < (qtdCarta / 2); i++) {
         distro.innerHTML += `  
         ${cardFaces}
         `;
-
     }
 }
 

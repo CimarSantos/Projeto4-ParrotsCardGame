@@ -24,31 +24,23 @@ h1 {
 
 .carta {
     background-color: #A7E9AF;
-    background-image: url(/img/front.png);
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: center;
     border: 1px solid #99CEA8;
     border-radius: 5px;
     width: 117px;
     height: 146px;
     margin: 1.5%;
-    transition: all .25s;
+    transform: rotateY(-180deg);
+    transition: all .5s;
     transform-style: preserve-3d;
-    perspective: 800px;
+}
+
+.carta img {
+    width: 100px;
+    margin-top: 20px;
 }
 
 .carta:hover {
     box-shadow: 0 0 7px blue;
-}
-
-.carta.virada {
-    transform: rotateY(180deg);
-}
-
-.backFace {
-    background-image: url(/img/bobrossparrot.gif);
-    transform: rotateY(-180deg);
 }
 
 .escondido {
